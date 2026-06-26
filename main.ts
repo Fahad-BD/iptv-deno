@@ -1,30 +1,53 @@
-const playlist = await Deno.readTextFile("./playlist.m3u");
+const PLAYLIST_URL =
+  "https://raw.githubusercontent.com/Fahad-BD/iptv-playlist/main/playlist.m3u";
 
-Deno.serve((req) => {
+Deno.serve(async (req) => {
   const url = new URL(req.url);
 
   // Playlist
   if (url.pathname === "/" || url.pathname === "/playlist.m3u") {
-    return new Response(playlist, {
-      headers: {
-        "Content-Type": "application/vnd.apple.mpegurl",
-        "Access-Control-Allow-Origin": "*",
-      },
+    try {
+      const response = await fetch(PLAYLIST_URL, {
+        headers: {
+          "Cache-Control": "no-cache",
+        },
+      });
+
+      if (!response.ok) {
+        return new Response("Failed to fetch playlist", { status: 500 });
+      }
+
+      const playlist = await response.text();
+
+      return new Response(playlist, {
+        headers: {
+          "Content-Type": "application/vnd.apple.mpegurl",
+          "Access-Control-Allow-Origin": "*",
+          "Cache-Control": "no-store, no-cache, must-revalidate",
+        },
+      });
+    } catch {
+      return new Response("Server Error", { status: 500 });
+    }
+  }
+
+  // Health Check
+  if (url.pathname === "/health") {
+    return Response.json({
+      status: "online",
+      service: "GitHub IPTV Proxy",
     });
   }
 
-  // Example endpoints
-  if (url.pathname.startsWith("/play/")) {
-    return new Response(
-      "This endpoint is available. Connect it to your own streaming backend.",
-      {
-        headers: {
-          "Content-Type": "text/plain",
-          "Access-Control-Allow-Origin": "*",
-        },
-      },
-    );
+  // Version
+  if (url.pathname === "/version") {
+    return Response.json({
+      version: "1.0",
+      updated: new Date().toISOString(),
+    });
   }
 
-  return new Response("Not Found", { status: 404 });
+  return new Response("404 Not Found", {
+    status: 404,
+  });
 });
