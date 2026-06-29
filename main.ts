@@ -1,5 +1,5 @@
 const PLAYLIST_URL =
-  "https://raw.githubusercontent.com/Fahad-BD/iptv-playlist/main/playlist.m3u";
+  "https://raw.githubusercontent.com/Fahad-BD/iptv-deno/main/playlist.m3u";
 
 Deno.serve(async (req) => {
   const url = new URL(req.url);
