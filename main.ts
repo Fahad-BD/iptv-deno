@@ -7,11 +7,15 @@ Deno.serve(async (req) => {
   // Playlist
   if (url.pathname === "/" || url.pathname === "/playlist.m3u") {
     try {
-      const response = await fetch(PLAYLIST_URL, {
-        headers: {
-          "Cache-Control": "no-cache",
+      const response = await fetch(
+        `${PLAYLIST_URL}?t=${Date.now()}`,
+        {
+          cache: "no-store",
+          headers: {
+            "Cache-Control": "no-cache",
+          },
         },
-      });
+      );
 
       if (!response.ok) {
         return new Response("Failed to fetch playlist", { status: 500 });
@@ -24,9 +28,12 @@ Deno.serve(async (req) => {
           "Content-Type": "application/vnd.apple.mpegurl",
           "Access-Control-Allow-Origin": "*",
           "Cache-Control": "no-store, no-cache, must-revalidate",
+          "Pragma": "no-cache",
+          "Expires": "0",
         },
       });
-    } catch {
+    } catch (err) {
+      console.error(err);
       return new Response("Server Error", { status: 500 });
     }
   }
@@ -42,7 +49,7 @@ Deno.serve(async (req) => {
   // Version
   if (url.pathname === "/version") {
     return Response.json({
-      version: "1.0",
+      version: "1.1",
       updated: new Date().toISOString(),
     });
   }
