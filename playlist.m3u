@@ -1,5 +1,8 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://image.pngaaa.com/781/6180781-middle.png" group-title="Sports",Toffee
+https://hsb71.pages.dev/live.m3u8
+
 #EXTINF:-1 tvg-logo="https://images.seeklogo.com/logo-png/64/1/t-sports-logo-png_seeklogo-640172.png" group-title="Sports",Tsports
 http://198.195.239.50:8095/tsports/tracks-v1a1/mono.m3u8
 
@@ -89,8 +92,6 @@ https://tiger-hub.vercel.app@vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-15
 #EXTINF:-1 tvg-logo="https://assets-prod.services.toffeelive.com/w_640,q_75,f_webp/o3v235oBcqxnFHJBkAdC/posters/159af631-796d-4342-a2a7-c272f32bcd32.png" group-title="Bangla",Ekhon TV
 https://sm-monirul.top/toffee/play/ekhon_tv.m3u8
 
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/63/BIJOY_TV_Logo_BD.png?_=20201121093158" group-title="Bangla",Bijoy TV
-http://starter.nvisionbd.net:80/play/2POvUifiBA1uXLNQDdQx9s88nauGp-SFUcf6UATtEzo
 
 //Indian//
 
@@ -106,8 +107,6 @@ https://trs1.aynaott.com/zeebangla/index.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Star_Jalsha_logo_2023.png/330px-Star_Jalsha_logo_2023.png" group-title="India",Star Jalsa
 http://starter.nvisionbd.net:80/play/2POvUifiBA1uXLNQDdQx9lnIfR7rt3GafmUo8Ccd9_Y
 
-#EXTINF:-1 tvg-logo="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/c6625d54279343.5954ba829ff17.png" group-title="India" ,Star Gold Select
-https://trs1.aynaott.com/TV9Bharatvarsh/index.m3u8
 
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5c/Colors_tv2017.png" group-title="India" ,Color HD
 https://trs1.aynaott.com/colorshd/index.m3u8
@@ -115,7 +114,5 @@ https://trs1.aynaott.com/colorshd/index.m3u8
 #EXTINF:-1 tvg-logo="https://www.pngitem.com/pimgs/m/3-32979_star-plus-star-plus-logo-new-hd-png.png" group-title="India" ,Star Plus
 https://trs1.aynaott.com/starplushd/index.m3u8
 
-#EXTINF:-1 xui-id="955" tvg-id="" tvg-name="NAGORIK TV HD" tvg-logo="https://i.postimg.cc/Y0RdYdkv/Nagorik-TV.jpg",NAGORIK TV HD
-http://starter.nvisionbd.net:80/play/2POvUifiBA1uXLNQDdQx9paLio2xSCmzg54ZrHJ64iM
 
 
