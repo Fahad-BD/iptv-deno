@@ -1,5 +1,8 @@
 #EXTM3U
 
+#EXTINF:-1 tvg-logo="https://image.pngaaa.com/781/6180781-middle...png" group-title="Sports",D-Sports
+https://1nyaler.streamhostingcdn.top/stream/106/index.m3u8
+
 #EXTINF:-1 tvg-logo="https://image.pngaaa.com/781/6180781-middle.png" group-title="Sports",Toffee
 https://hsb71.pages.dev/live.m3u8
 
