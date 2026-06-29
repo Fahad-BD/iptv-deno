@@ -3,20 +3,9 @@
 #EXTINF:-1 tvg-logo="https://images.seeklogo.com/logo-png/64/1/t-sports-logo-png_seeklogo-640172.png" group-title="Sports",Tsports
 http://198.195.239.50:8095/tsports/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="Sports",Caze TV BR
-https://dfr80qz435crc.cloudfront.net/MNOP/Amagi/Caze/Caze_TV_BR/1080p-vtt/index.m3u8
 
-#EXTINF:-1 group-title="Sports",FOX Sports
-https://1nyaler.streamhostingcdn.top/stream/94/index.m3u8
 
-#EXTINF:-1 group-title="Sports",NBC Puerto Rico
-https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master_1080.m3u8
 
-#EXTINF:-1 group-title="Sports",DAZN Sports
-https://d1jzu95oc8fgt3.cloudfront.net/FOX_Sports720p.m3u8
-
-#EXTINF:-1 group-title="Sports",Win Sports
-https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8
 
 //Bangla//
 
