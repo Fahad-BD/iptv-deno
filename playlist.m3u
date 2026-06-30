@@ -20,8 +20,6 @@ https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8
 #EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/739539785304281088/zMwNO936_400x400.jpg" group-title="Bangla",Deshe Bideshe
 https://dbcanada.sonarbanglatv.com/deshebideshe/dbtv/index.m3u8
 
-#EXTINF:-1 tvg-logo="https://seeklogo.com/images/B/bbc-news-logo-8648ABD044-seeklogo.com.png" group-title="Bangla",BBC News
-https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News-avc1_3000000=8-mp4a_208000_eng=2.m3u8
 
 #EXTINF:-1 group-title="Bangla" tvg-logo="https://cdn.brandfetch.io/idblg5nzY2/w/262/h/76/theme/light/logo.png?c=1bxid64Mup7aczewSAYMX&t=1781850489629",MY TV
 https://mytvbangla.com/0.m3u8
